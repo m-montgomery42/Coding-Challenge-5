@@ -39,3 +39,11 @@ cartItems.unshift("Potatoes");
 cartItems.shift();
 // Log the final array to the console
 console.log(cartItems);
+
+// Task 4: Map Method
+// Declare an array prices= [100, 200, 300]
+let prices = [100, 200, 300];
+// Use the .map() method to apply a 10% discount to each price
+let discountedPrices = prices.map(price => price * 0.9);
+// Log the new discounted prices to the console
+console.log(discountedPrices);
