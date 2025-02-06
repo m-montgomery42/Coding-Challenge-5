@@ -38,12 +38,20 @@ cartItems.unshift("Potatoes");
 // Remove the first item using .shift()
 cartItems.shift();
 // Log the final array to the console
-console.log(cartItems);
+console.log(`Cart Items: ${cartItems}`);
 
 // Task 4: Map Method
 // Declare an array prices= [100, 200, 300]
 let prices = [100, 200, 300];
 // Use the .map() method to apply a 10% discount to each price
-let discountedPrices = prices.map(price => price * 0.9);
+let discountedPrices = prices.map(price => `$${(price * 0.9).toFixed(2)}`);
 // Log the new discounted prices to the console
-console.log(discountedPrices);
+console.log(`Discounted Prices: ${discountedPrices}`);
+
+// Task 5: Filter Method
+// Declare an array inventory with at least five product quantities
+let inventory = [5, 0, 12, 8, 0];
+// Use the .filter() method to remove products with zero stock
+let filteredInventory = inventory.filter(quantity => quantity > 0);
+// Log the filtered array to the console
+console.log(`Inventory: ${filteredInventory}`);
